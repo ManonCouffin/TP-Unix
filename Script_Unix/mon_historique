@@ -1,0 +1,188 @@
+    1  pwd
+    2  ls -a
+    3  ls
+    4  ls .
+    5  ls ..
+    6  Bureau  Documents  Images  Modèles  Musique  Public  Téléchargements  Vidéos
+    7  ls ~
+    8  cd Musique/
+    9  ls ~
+   10  ls /
+   11  cd ..
+   12  ls /
+   13  clear
+   14  mkdir TP_UNIX
+   15  LS
+   16  ls
+   17  cd TP_UNIX/
+   18  ls
+   19  cd ..
+   20  cd TP_UNIX/
+   21  pwd
+   22  clear
+   23  mkdir Script_Unix
+   24  cd Script_Unix/
+   25  pwd
+   26  .//home/cfm3663a/TP_UNIX/Script_Unix
+   27  clear
+   28  ./mon_script.csh
+   29  cd ..
+   30  cd ~
+   31  cd Téléchargements/
+   32  ls
+   33  mv mon_script.csh ../TP_UNIX/Script_Unix/
+   34  ls
+   35  mv boucle.csh ../TP_UNIX/Script_Unix/
+   36  ls
+   37  cd ~
+   38  ls
+   39  pwd
+   40  cd TP_UNIX/Script_Unix/
+   41  ls
+   42  cd
+   43  ls -r
+   44  ls -R
+   45  clear
+   46  cd TP_UNIX/Script_Unix/
+   47  pwd
+   48  cat mon_script.csh 
+   49  cat *.csh 
+   50  cat boucle.csh
+   51  clear
+   52  ls -l
+   53  ls -a -l
+   54  pwd
+   55  -rw-r--r-- 1 cfm3663a utilisateurs du domaine  261  7 oct.  10:37 mon_script.csh
+   56  clear
+   57  chmod 600 ./mon_script.csh 
+   58  ls -a -l
+   59  ./mon_script.csh
+   60  chmod u+x mon_script.csh 
+   61  ./mon_script.csh
+   62  ls -l -a
+   63  clear
+   64  chmod 777 ./mon_script.csh 
+   65  ls -l -a
+   66  clear
+   67  chmod go-rwx ./mon_script.csh 
+   68  ls -a -l
+   69  chmod go-r ./boucle.csh 
+   70  ls -a -l
+   71  chmod go+r ./boucle.csh 
+   72  ls -a -l
+   73  clear
+   74  cat
+   75  Elles assurent le traitement d’informations luessur l’entr ́ee et  ́ecrivent les r ́esultats sur la sortie standard ;
+   76  clear
+   77  cat > mon_message
+   78  clear
+   79  cat > mon_message
+   80  clear
+   81  cat > mon_message
+   82  ls
+   83  cat mon_message 
+   84  cat < mon_message
+   85  cat >> mon_message
+   86  cat < mon_message
+   87  ./mon_script.csh > resultat_mon_script.txt
+   88  ls
+   89  cat mon_script.csh 
+   90  cat resultat_mon_script.txt 
+   91  7/10 
+   92  ls
+   93  jupyter-notebook 
+   94  cd Téléchargements/
+   95  jupyter-notebook 
+   96  cd ~
+   97  cd ..
+   98  ./new_script.csh
+   99  cd ~
+  100  ls
+  101  cd TP_UNIX/
+  102  cd Script_Unix/
+  103  ./new_script.csh
+  104  ./new_script.csh >& resultat_new_script.txt
+  105  ls
+  106  cat resultat_new_script.txt 
+  107  ls -l (b) ls -l | wc 
+  108  ls -l
+  109  ls -l | wc 
+  110  ls -l | wc -l
+  111  ls -l | wc -w
+  112  ls -l | wc -c
+  113  cat mon_message | wc 
+  114  cat mon_message | wc -lc
+  115  clear
+  116  gedit
+  117  ls
+  118  gedit
+  119  ls
+  120  gedit&
+  121  ls
+  122  ps
+  123  kill gedit
+  124  kill --help
+  125  kill 9890
+  126  ps
+  127  clear
+  128  ./boucle.csh
+  129  chmod 777 boucle.csh 
+  130  ./boucle.csh
+  131  head &
+  132  cat &
+  133  rail &
+  134  tail &
+  135  ps
+  136  ps –ef | grep $USER  
+  137  ps –ef | grep $USER
+  138  jobs
+  139  cd TP_UNIX/
+  140  cd Script_Unix/
+  141  ps
+  142  ps –ef | grep $USER
+  143  jobs
+  144  jobs -l
+  145  clear
+  146  head &
+  147  ps
+  148  kill 4626
+  149  ps
+  150  kill -9 4626
+  151  ps
+  152  tail &
+  153  cat &
+  154  ps
+  155  ls -l
+  156  jobs
+  157  head &
+  158  ps
+  159  ps –ef | grep $USER
+  160  jobs
+  161  jobs -l
+  162  kill %1
+  163  ps
+  164  kill %3
+  165  ps
+  166  clear
+  167  ./boucle.csh 
+  168  clear
+  169  jobs
+  170  fg %2
+  171  jobs
+  172  ps
+  173  cat &
+  174  jobs -l
+  175  fg %1
+  176  ps
+  177  clear
+  178  csh boucle.csh &
+  179  jobs
+  180  fg %1
+  181  clear
+  182  csh boucle.csh &
+  183  csh boucle.csh
+  184  ps -f
+  185  jobs -l
+  186  kill %1
+  187  clear
+  188  history > mon_historique
